@@ -47,7 +47,7 @@ abstract class AbstractApi
      * @param array<string, mixed> $parameter
      * @return mixed|string
      */
-    protected function send(string $action, array $parameter = [])
+    public function send(string $action, array $parameter = [])
     {
         $header = [];
         $body = array_merge(['action' => $action], $parameter);
